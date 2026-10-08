@@ -1,0 +1,10 @@
+services:
+  php:
+    build: .
+    image: php85-workshop
+    working_dir: /app
+    # Run as the host user so that vendor/ and caches are not owned by root.
+    # On Linux, export UID and GID first if your user is not 1000:1000.
+    user: "${UID:-1000}:${GID:-1000}"
+    volumes:
+      - .:/app

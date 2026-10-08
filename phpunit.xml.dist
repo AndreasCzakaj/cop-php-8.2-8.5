@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="bootstrap.php"
+         cacheDirectory=".phpunit.cache"
+         colors="true"
+         displayDetailsOnTestsThatTriggerWarnings="true"
+         displayDetailsOnTestsThatTriggerDeprecations="true">
+    <testsuites>
+        <testsuite name="ex01"><directory>tests/Ex01PropertyHooks</directory></testsuite>
+        <testsuite name="ex02"><directory>tests/Ex02AsymmetricVisibility</directory></testsuite>
+        <testsuite name="ex03"><directory>tests/Ex03PipeOperator</directory></testsuite>
+        <testsuite name="ex04"><directory>tests/Ex04CloneWith</directory></testsuite>
+        <testsuite name="ex05"><directory>tests/Ex05TypedConstants</directory></testsuite>
+        <testsuite name="ex06"><directory>tests/Ex06ArrayFind</directory></testsuite>
+        <testsuite name="ex07"><directory>tests/Ex07ArrayFirstLast</directory></testsuite>
+        <testsuite name="ex08"><directory>tests/Ex08ClosuresInConstExpr</directory></testsuite>
+        <testsuite name="ex09"><directory>tests/Ex09FatalBacktraces</directory></testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory>src</directory>
+        </include>
+    </source>
+</phpunit>
