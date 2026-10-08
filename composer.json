@@ -20,6 +20,10 @@
         }
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "phpunit",
+        "test:solutions": [
+            "@putenv WORKSHOP_SOLUTIONS=1",
+            "phpunit"
+        ]
     }
 }
